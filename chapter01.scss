@@ -158,3 +158,17 @@
 #a07-thinkingballoon01, #a08-thinkingballoon02, #a09-thinkingballoon03{
     opacity: 0;
 }
+
+
+
+#a10-trigger{
+    width: 80vw;
+    margin: 0 10%;
+    height: 65vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    background-image: url(img/a10-reading-letter.png);
+    border: 3px solid $black;
+}

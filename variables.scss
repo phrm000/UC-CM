@@ -42,7 +42,7 @@ user-select: none;
 //Common
 html,body,main{
 
-  background-color: $white;
+  background-color: #fff;
 }
 a , button{
   cursor: pointer !important;
@@ -84,7 +84,7 @@ h2{
   justify-content: center;
   align-items: center;
   border: 3px solid $black;
-  background: $white;
+  background: #fff;
   font-family: $text;
   font-size: 24px;
   text-align: center;

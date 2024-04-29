@@ -12,7 +12,7 @@
   src: url("fonts/AdamWarrenpro-Bold.woff2");
 }
 html, body, main {
-  background-color: #F8FBFF;
+  background-color: #fff;
 }
 
 a, button {
@@ -50,7 +50,7 @@ h2 {
   justify-content: center;
   align-items: center;
   border: 3px solid #050505;
-  background: #F8FBFF;
+  background: #fff;
   font-family: "AdamWarren";
   font-size: 24px;
   text-align: center;
@@ -168,7 +168,7 @@ span {
   src: url("fonts/AdamWarrenpro-Bold.woff2");
 }
 html, body, main {
-  background-color: #F8FBFF;
+  background-color: #fff;
 }
 
 a, button {
@@ -206,7 +206,7 @@ h2 {
   justify-content: center;
   align-items: center;
   border: 3px solid #050505;
-  background: #F8FBFF;
+  background: #fff;
   font-family: "AdamWarren";
   font-size: 24px;
   text-align: center;
@@ -374,4 +374,16 @@ h2 {
 
 #a07-thinkingballoon01, #a08-thinkingballoon02, #a09-thinkingballoon03 {
   opacity: 0;
+}
+
+#a10-trigger {
+  width: 80vw;
+  margin: 0 10%;
+  height: 65vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  background-image: url(img/a10-reading-letter.png);
+  border: 3px solid #050505;
 }/*# sourceMappingURL=main.css.map */

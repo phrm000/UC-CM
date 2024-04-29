@@ -12,7 +12,7 @@
   src: url("fonts/AdamWarrenpro-Bold.woff2");
 }
 html, body, main {
-  background-color: #F8FBFF;
+  background-color: #fff;
 }
 
 a, button {
@@ -50,7 +50,7 @@ h2 {
   justify-content: center;
   align-items: center;
   border: 3px solid #050505;
-  background: #F8FBFF;
+  background: #fff;
   font-family: "AdamWarren";
   font-size: 24px;
   text-align: center;

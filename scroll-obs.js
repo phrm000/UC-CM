@@ -71,7 +71,7 @@ gsap.to("#a03-carrierBg", {
 
 	},
 
-	y:"-=90%",
+	y:"-=10%",
 	ease:"none"
   })
 
@@ -128,7 +128,7 @@ gsap.to("#a05-balloon03", {
 gsap.to("#a06-fist", {
 	scrollTrigger: {
 		trigger: "#a06-trigger",
-		scrub: 1,
+		scrub: 0.0001,
 		start: "-=5% center",
 		end: "+=5%",
 
@@ -143,7 +143,7 @@ gsap.to("#a06-fist", {
 	scrollTrigger: {
 		trigger: "#thinking-trigger",
 		scrub: 0.1,
-		start: "25% center",
+		start: "15% center",
 		end: "40% center",
 
 	},
@@ -158,7 +158,7 @@ gsap.to("#a06-fist", {
 	scrollTrigger: {
 		trigger: "#thinking-trigger",
 		scrub:1,
-		start: "35% center",
+		start: "25% center",
 		end: "50% center",
 
 	},
@@ -173,7 +173,7 @@ gsap.to("#a06-fist", {
 	scrollTrigger: {
 		trigger: "#thinking-trigger",
 		scrub: 1,
-		start: "45% center",
+		start: "35% center",
 		end: "60% center",
 
 	},
