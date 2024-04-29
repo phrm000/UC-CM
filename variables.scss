@@ -1,0 +1,138 @@
+
+$black:#050505;
+$offblack:#2C2C2C;
+$darker-gray: #3A3A3A;
+$gray:#757575;
+$light-gray:#7C8AA5;
+$white: #F8FBFF;
+
+
+
+$red:#A01E26;
+$yellow: #DF8E43;
+
+
+
+@font-face { font-family: Bondrians; src: url('fonts/Bondrians.woff2'); }
+
+@font-face { font-family: AdamWarren; src: url('fonts/AdamWarrenpro.woff2'); } 
+@font-face { font-family: AdamWarren; font-weight: bold; src: url('fonts/AdamWarrenpro-Bold.woff2');}
+
+
+$title: 'Bondrians';
+$text: 'AdamWarren';
+
+
+
+
+//Mixins
+
+@mixin  unselect {
+-webkit-user-drag: none;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-tap-highlight-color: transparent;
+}
+
+
+//Common
+html,body,main{
+
+  background-color: $white;
+}
+a , button{
+  cursor: pointer !important;
+}
+
+
+
+.chapter-mark{
+  height: 100vh;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+
+}
+
+section{
+  padding-bottom: 10vh;
+}
+
+h1{
+  font-family: $title;
+  font-size: 96px;
+  color: $red;
+}
+
+h2{
+  font-family: $title;
+  font-size: 72px;
+  color: $light-gray;
+}
+
+
+
+.text-balloon{
+  display: inline-flex;
+  padding: 32px;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid $black;
+  background: $white;
+  font-family: $text;
+  font-size: 24px;
+  text-align: center;
+}
+
+.centered-below{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 05% 0;
+}
+
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+.section {
+
+  overflow: hidden;
+}
+
+.items {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  list-style: none;
+ 
+}
+
+.item {
+  min-width:960px;
+  height: 450px;
+  margin-right: 90px;
+ 
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid $black;
+
+
+  .text-balloon{
+    width: 80%;
+    height: fit-content;
+    position: relative;
+    top: 10vh;
+    text-align: center;
+  }
+}
