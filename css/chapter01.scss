@@ -14,7 +14,7 @@
     background-repeat: no-repeat;
     background-position: 50% 30%;
     background-size: 180%;
-    background-image: url(img/ch01-a01-warrenbg.png);
+    background-image: url(../img/ch01-a01-warrenbg.png);
     transition: 1s;
     border: 3px solid $black;
 
@@ -34,7 +34,7 @@
 #a02-balloon01{
     z-index: 1;
     position: relative;
-    left: -250px;
+    left: -550px;
     top:450px;
     opacity: 0;
     transition: 1s;
@@ -57,7 +57,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url(img/ch01-a03-Carrierbg.png);
+    background-image: url(../img/ch01-a03-Carrierbg.png);
     transition: 1s;
     border: 3px solid #050505;
 
@@ -71,7 +71,7 @@
 
 //
 
-#a04-balloon02{
+#a04-balloon02, #a10-balloon07, #a11-balloon08{
     z-index: 1;
     position: relative;
     top: -150px;
@@ -80,6 +80,21 @@
     transition: 1s;
 }
 
+
+#a10-balloon07, #a11-balloon08{
+    z-index: 1;
+    position: relative;
+    top: -550px;
+    left: 95vw;
+    opacity: 0;
+    transition: 1s;
+}
+
+
+#a11-balloon08{
+    transform: translateX(-100px);
+    transform: translateY(120px);
+}
 
 
 #a05-balloon03{
@@ -95,14 +110,14 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url(img/a06-hangerman-bg1.png);
+    background-image: url(../img/a06-hangerman-bg1.png);
 }
 
 #slider01-bg2{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url(img/a06-daisyD-bg2.png);
+    background-image: url(../img/a06-daisyD-bg2.png);
 }
 
 
@@ -126,15 +141,15 @@
 
 #a06-fist{
     position: relative;
-    left: 100vw;
-    width: 80vw;
+    left: 120vw;
+    width: 75vw;
     margin: 0 10%;
     height: 65vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     z-index: 1;
-    background-image: url(img/ch01-a01-warrenbg.png);
+    background-image: url(../img/a07-fist.jpg);
     transition: 1s;
     border: 3px solid $black;
     top: -120px;
@@ -169,6 +184,67 @@
     background-position: center;
     background-size: cover;
     z-index: 1;
-    background-image: url(img/a10-reading-letter.png);
+    background-image: url(../img/a10-reading-letter.png);
     border: 3px solid $black;
 }
+
+
+#a12-trigger{
+    width: 80vw;
+    margin: 0 10%;
+    height: 65vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    background-image: url(../img/a11-spitting.png);
+    border: 3px solid $black;
+    position: relative;
+    left: 120vw;
+}
+
+#a12-fist{
+    position: relative;
+    left: -120vw;
+    width: 75vw;
+    margin: 0 10%;
+    height: 65vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    background-image: url(../img/a12-fist.jpg);
+    transition: 1s;
+    border: 3px solid $black;
+    top: -200px;
+
+}
+
+#a14-17-trigger{
+    width: 90vw;
+    margin: 0 5%;
+    height: 115vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    background-image: url(../img/a13-background.jpg);
+    border: 3px solid $black;
+}
+
+.far-left{
+    width: 100%;
+    position: relative;
+    left: -100vw;
+}
+
+.far-right{
+    width: 100%;
+    position: relative;
+    left: 180vw;
+}
+
+.overlayed-section{
+    transform: translate(-50px, -200px);
+}
+

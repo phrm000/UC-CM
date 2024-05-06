@@ -1,0 +1,1073 @@
+@font-face {
+  font-family: Bondrians;
+  src: url("../fonts/Bondrians.woff2");
+}
+@font-face {
+  font-family: AdamWarren;
+  src: url("../fonts/AdamWarrenpro.woff2");
+}
+@font-face {
+  font-family: AdamWarren;
+  font-weight: bold;
+  src: url("../fonts/AdamWarrenpro-Bold.woff2");
+}
+html, body, main {
+  background-color: #fff;
+}
+
+a, button {
+  cursor: pointer !important;
+}
+
+.chapter-mark {
+  height: 100vh;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+section {
+  padding-bottom: 10vh;
+}
+
+h1 {
+  font-family: "Bondrians";
+  font-size: 96px;
+  color: #A01E26;
+}
+
+h2 {
+  font-family: "Bondrians";
+  font-size: 50vh;
+  color: #050505;
+}
+
+.text-balloon {
+  display: inline-flex;
+  padding: 32px;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #050505;
+  background: #fff;
+  font-family: "AdamWarren";
+  font-size: 24px;
+  text-align: center;
+}
+
+.centered-below {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.section {
+  overflow: hidden;
+}
+
+.items, .items02, .items03, .items04 {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  list-style: none;
+}
+
+.item, .item02, .item03, .item04 {
+  min-width: 960px;
+  height: 450px;
+  margin-right: 90px;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid #050505;
+}
+.item .text-balloon, .item02 .text-balloon, .item03 .text-balloon, .item04 .text-balloon {
+  width: 80%;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  top: 10vh;
+  text-align: center;
+}
+
+.margin-added {
+  margin: 15% 0;
+}
+
+.balloon-overlay {
+  position: relative;
+  top: -100vh;
+  width: 100%;
+  z-index: 999;
+}
+
+img {
+  outline: none;
+}
+
+.indoors {
+  background-color: #050505;
+}
+
+body, html {
+  width: 100%;
+  max-width: 100%;
+}
+
+html::-webkit-scrollbar {
+  width: 3px;
+  height: 0px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #F8FBFF;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #050505;
+  border: 3px solid #050505;
+}
+
+#overlay-effect {
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 9999;
+  background-image: url(../img/effect-overlay.png);
+  mix-blend-mode: multiply;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.grid-2 {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  gap: 32px;
+  margin: 0 10%;
+}
+
+.grid-2-1 {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  gap: 32px;
+  margin: 0 5%;
+}
+
+.column-grid {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#text-title {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+span {
+  font-family: "Bondrians";
+  font-size: 40px;
+  color: #DF8E43;
+}
+
+#object {
+  position: fixed;
+  left: 0;
+  bottom: 5%;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  background: #d3d3d3;
+}
+
+@font-face {
+  font-family: Bondrians;
+  src: url("../fonts/Bondrians.woff2");
+}
+@font-face {
+  font-family: AdamWarren;
+  src: url("../fonts/AdamWarrenpro.woff2");
+}
+@font-face {
+  font-family: AdamWarren;
+  font-weight: bold;
+  src: url("../fonts/AdamWarrenpro-Bold.woff2");
+}
+html, body, main {
+  background-color: #fff;
+}
+
+a, button {
+  cursor: pointer !important;
+}
+
+.chapter-mark {
+  height: 100vh;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+section {
+  padding-bottom: 10vh;
+}
+
+h1 {
+  font-family: "Bondrians";
+  font-size: 96px;
+  color: #A01E26;
+}
+
+h2 {
+  font-family: "Bondrians";
+  font-size: 50vh;
+  color: #050505;
+}
+
+.text-balloon {
+  display: inline-flex;
+  padding: 32px;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #050505;
+  background: #fff;
+  font-family: "AdamWarren";
+  font-size: 24px;
+  text-align: center;
+}
+
+.centered-below {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.section {
+  overflow: hidden;
+}
+
+.items, .items02, .items03, .items04 {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  list-style: none;
+}
+
+.item, .item02, .item03, .item04 {
+  min-width: 960px;
+  height: 450px;
+  margin-right: 90px;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid #050505;
+}
+.item .text-balloon, .item02 .text-balloon, .item03 .text-balloon, .item04 .text-balloon {
+  width: 80%;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  top: 10vh;
+  text-align: center;
+}
+
+.margin-added {
+  margin: 15% 0;
+}
+
+.balloon-overlay {
+  position: relative;
+  top: -100vh;
+  width: 100%;
+  z-index: 999;
+}
+
+img {
+  outline: none;
+}
+
+.indoors {
+  background-color: #050505;
+}
+
+#chapter01 {
+  width: 100%;
+  height: 100vh;
+}
+
+#a01-warrenBg {
+  transform-origin: center top;
+  width: 80%;
+  margin: 0 10%;
+  height: 55vh;
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+  background-size: 180%;
+  background-image: url(../img/ch01-a01-warrenbg.png);
+  transition: 1s;
+  border: 3px solid #050505;
+}
+
+.a01-animation {
+  background-position: center !important;
+  background-size: 120% !important;
+  height: 70vh !important;
+  transition: 500ms;
+}
+
+#a02-balloon01 {
+  z-index: 1;
+  position: relative;
+  left: -550px;
+  top: 450px;
+  opacity: 0;
+  transition: 1s;
+}
+
+#a03-carrierBg {
+  opacity: 0;
+  height: 40vh;
+  width: 40vh;
+  position: relative;
+  top: 300px;
+  left: 100vw;
+  opacity: 0;
+  transition: 1s;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../img/ch01-a03-Carrierbg.png);
+  transition: 1s;
+  border: 3px solid #050505;
+}
+
+.a03-animation {
+  opacity: 1 !important;
+  transition: 1s;
+}
+
+#a04-balloon02, #a10-balloon07, #a11-balloon08 {
+  z-index: 1;
+  position: relative;
+  top: -150px;
+  left: 95vw;
+  opacity: 0;
+  transition: 1s;
+}
+
+#a10-balloon07, #a11-balloon08 {
+  z-index: 1;
+  position: relative;
+  top: -550px;
+  left: 95vw;
+  opacity: 0;
+  transition: 1s;
+}
+
+#a11-balloon08 {
+  transform: translateX(-100px);
+  transform: translateY(120px);
+}
+
+#a05-balloon03 {
+  z-index: 1;
+  position: relative;
+  opacity: 1;
+  transition: 1s;
+}
+
+#slider01-bg1 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../img/a06-hangerman-bg1.png);
+}
+
+#slider01-bg2 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../img/a06-daisyD-bg2.png);
+}
+
+#a06-balloon04 {
+  z-index: 1;
+  position: relative;
+  left: 95vw;
+  opacity: 0;
+  transition: 1s;
+}
+
+#a06-fist {
+  position: relative;
+  left: 120vw;
+  width: 75vw;
+  margin: 0 10%;
+  height: 65vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  background-image: url(../img/a07-fist.jpg);
+  transition: 1s;
+  border: 3px solid #050505;
+  top: -120px;
+}
+
+.deslocated .left {
+  transform: translateX(-15%);
+}
+.deslocated .right {
+  transform: translateX(15%);
+}
+
+#a07-thinkingballoon01, #a08-thinkingballoon02, #a09-thinkingballoon03 {
+  opacity: 0;
+}
+
+#a10-trigger {
+  width: 80vw;
+  margin: 0 10%;
+  height: 65vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  background-image: url(../img/a10-reading-letter.png);
+  border: 3px solid #050505;
+}
+
+#a12-trigger {
+  width: 80vw;
+  margin: 0 10%;
+  height: 65vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  background-image: url(../img/a11-spitting.png);
+  border: 3px solid #050505;
+  position: relative;
+  left: 120vw;
+}
+
+#a12-fist {
+  position: relative;
+  left: -120vw;
+  width: 75vw;
+  margin: 0 10%;
+  height: 65vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  background-image: url(../img/a12-fist.jpg);
+  transition: 1s;
+  border: 3px solid #050505;
+  top: -200px;
+}
+
+#a14-17-trigger {
+  width: 90vw;
+  margin: 0 5%;
+  height: 115vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  background-image: url(../img/a13-background.jpg);
+  border: 3px solid #050505;
+}
+
+.far-left {
+  width: 100%;
+  position: relative;
+  left: -100vw;
+}
+
+.far-right {
+  width: 100%;
+  position: relative;
+  left: 180vw;
+}
+
+.overlayed-section {
+  transform: translate(-50px, -200px);
+}
+
+@font-face {
+  font-family: Bondrians;
+  src: url("../fonts/Bondrians.woff2");
+}
+@font-face {
+  font-family: AdamWarren;
+  src: url("../fonts/AdamWarrenpro.woff2");
+}
+@font-face {
+  font-family: AdamWarren;
+  font-weight: bold;
+  src: url("../fonts/AdamWarrenpro-Bold.woff2");
+}
+html, body, main {
+  background-color: #fff;
+}
+
+a, button {
+  cursor: pointer !important;
+}
+
+.chapter-mark {
+  height: 100vh;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+section {
+  padding-bottom: 10vh;
+}
+
+h1 {
+  font-family: "Bondrians";
+  font-size: 96px;
+  color: #A01E26;
+}
+
+h2 {
+  font-family: "Bondrians";
+  font-size: 50vh;
+  color: #050505;
+}
+
+.text-balloon {
+  display: inline-flex;
+  padding: 32px;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #050505;
+  background: #fff;
+  font-family: "AdamWarren";
+  font-size: 24px;
+  text-align: center;
+}
+
+.centered-below {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.section {
+  overflow: hidden;
+}
+
+.items, .items02, .items03, .items04 {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  list-style: none;
+}
+
+.item, .item02, .item03, .item04 {
+  min-width: 960px;
+  height: 450px;
+  margin-right: 90px;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid #050505;
+}
+.item .text-balloon, .item02 .text-balloon, .item03 .text-balloon, .item04 .text-balloon {
+  width: 80%;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  top: 10vh;
+  text-align: center;
+}
+
+.margin-added {
+  margin: 15% 0;
+}
+
+.balloon-overlay {
+  position: relative;
+  top: -100vh;
+  width: 100%;
+  z-index: 999;
+}
+
+img {
+  outline: none;
+}
+
+.indoors {
+  background-color: #050505;
+}
+
+.column-grid {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#a18-sheriff, #a20-sheriff {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  border: 0px solid #050505;
+  border: 0px !important;
+  outline: 0 !important;
+}
+
+#a18-sheriff {
+  background-image: url(../img/a18-mannix1-bg.jpg);
+}
+
+#a20-sheriff {
+  background-image: url(../img/a20-mannix2-bg.jpg);
+}
+
+#a21-sheriff {
+  width: 100%;
+}
+
+#a181-sheriff, #a18-sheriff, #a19-sheriff, #a20-sheriff, #a21-sheriff {
+  opacity: 0;
+}
+
+#slider02-bg1, #slider02-bg2, #slider02-bg3 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#slider02-bg1 {
+  background-image: url(../img/slider02-bg1.jpg);
+}
+
+#slider02-bg2 {
+  background-image: url(../img/slider02-bg2.jpg);
+}
+
+#slider02-bg3 {
+  background-image: url(../img/slider02-bg3.jpg);
+}
+
+#a22-24-trigger {
+  width: 80vw;
+  margin: 0 10%;
+  height: 75vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  background-image: url(../img/a24-firstBg.jpg);
+  border: 3px solid #050505;
+}
+
+.balloon-overlay02 {
+  position: relative;
+  top: -80vh;
+  width: 100%;
+  z-index: 999;
+}
+
+.a24-bg {
+  background-image: url(../img/a24-secondBg.jpg) !important;
+  transition: 1s;
+}
+
+#a24-bg {
+  width: 80vw;
+  margin: 0 10%;
+  height: 75vh;
+  position: relative;
+  left: -100vw;
+  transform: translateY(-82vh);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  background-image: url(../img/a24-secondBg.jpg);
+  border: 3px solid #050505;
+}
+
+@font-face {
+  font-family: Bondrians;
+  src: url("../fonts/Bondrians.woff2");
+}
+@font-face {
+  font-family: AdamWarren;
+  src: url("../fonts/AdamWarrenpro.woff2");
+}
+@font-face {
+  font-family: AdamWarren;
+  font-weight: bold;
+  src: url("../fonts/AdamWarrenpro-Bold.woff2");
+}
+html, body, main {
+  background-color: #fff;
+}
+
+a, button {
+  cursor: pointer !important;
+}
+
+.chapter-mark {
+  height: 100vh;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+section {
+  padding-bottom: 10vh;
+}
+
+h1 {
+  font-family: "Bondrians";
+  font-size: 96px;
+  color: #A01E26;
+}
+
+h2 {
+  font-family: "Bondrians";
+  font-size: 50vh;
+  color: #050505;
+}
+
+.text-balloon {
+  display: inline-flex;
+  padding: 32px;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #050505;
+  background: #fff;
+  font-family: "AdamWarren";
+  font-size: 24px;
+  text-align: center;
+}
+
+.centered-below {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.section {
+  overflow: hidden;
+}
+
+.items, .items02, .items03, .items04 {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  list-style: none;
+}
+
+.item, .item02, .item03, .item04 {
+  min-width: 960px;
+  height: 450px;
+  margin-right: 90px;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid #050505;
+}
+.item .text-balloon, .item02 .text-balloon, .item03 .text-balloon, .item04 .text-balloon {
+  width: 80%;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  top: 10vh;
+  text-align: center;
+}
+
+.margin-added {
+  margin: 15% 0;
+}
+
+.balloon-overlay {
+  position: relative;
+  top: -100vh;
+  width: 100%;
+  z-index: 999;
+}
+
+img {
+  outline: none;
+}
+
+.indoors {
+  background-color: #050505;
+}
+
+.balloon-overlay03 {
+  position: relative;
+  top: 40vh;
+  width: 100%;
+  z-index: 999;
+}
+
+#ch5a01,
+#ch5a04,
+#ch5a05,
+#ch5a08 {
+  width: 80vw;
+  margin: 0 10%;
+  height: 45vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  border: 3px solid #050505;
+}
+
+#ch5a01 {
+  background-image: url(../img/ch5a01.jpg);
+}
+
+#ch5a04 {
+  height: 65vh;
+  background-position: bottom;
+  transform: translateX(-10%);
+  background-image: url(../img/ch5a04.jpg);
+}
+
+#ch5a05 {
+  height: 65vh;
+  transform: translateX(10%);
+  background-image: url(../img/ch5a05.jpg);
+}
+
+#ch5a08 {
+  height: 85vh;
+  background-position: top;
+  background-image: url(../img/ch5a08.jpg);
+  transform: translateY(-15vh);
+}
+
+#slider03-bg1,
+#slider03-bg2,
+#slider03-bg3,
+#slider03-bg4 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#slider03-bg1 {
+  background-image: url(../img/slider03-bg1.jpg);
+}
+
+#slider03-bg2 {
+  background-image: url(../img/slider03-bg2.jpg);
+}
+
+#slider03-bg3 {
+  background-image: url(../img/slider03-bg3.jpg);
+}
+
+#slider03-bg4 {
+  background-image: url(../img/slider03-bg4.jpg);
+}
+
+#ch5a09-trigger {
+  margin-top: 10%;
+}
+#ch5a09-trigger img {
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+}
+#ch5a09-trigger .text-balloon {
+  opacity: 0;
+}
+
+#ch5a09 {
+  background-image: url(../img/ch5a09.jpg);
+}
+
+#ch5a11 {
+  background-image: url(../img/ch5a11.jpg);
+}
+
+#ch5a13 {
+  background-image: url(../img/ch5a13.jpg);
+}
+
+#ch5a14,
+#ch5a15,
+#ch5a16 {
+  width: 100vw;
+  margin: 0 10%;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  border: 3px solid #050505;
+  position: relative;
+}
+
+#ch5a14 {
+  left: -100vw;
+  background-image: url(../img/ch5a14.jpg);
+}
+
+#ch5a15 {
+  left: 100vw;
+  background-image: url(../img/ch5a15.jpg);
+}
+
+#ch5a16 {
+  left: -100vw;
+  background-image: url(../img/ch5a16.jpg);
+}
+
+#ch5a17 {
+  width: 80vw;
+  margin: 0 10%;
+  height: 65vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  background-image: url(../img/ch5a17.jpg);
+  border: 3px solid #050505;
+}
+
+#ch5a18 {
+  width: 80vw;
+  margin: 0 10%;
+  height: 65vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  background-image: url(../img/ch5a18.jpg);
+  border: 3px solid #050505;
+}
+
+#ch5a19 {
+  margin: 0 10%;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  border: 3px solid #050505;
+  background-image: url(../img/ch5a19.jpg);
+}
+
+#ch5a20 {
+  margin: 0 20%;
+  height: 70vh;
+  width: 60vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  border: 3px solid #050505;
+  background-image: url(../img/ch5a20.jpg);
+}
+
+#ch5a21 {
+  margin: 0 20%;
+  width: 60vw;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  border: 3px solid #050505;
+  background-image: url(../img/ch5a21.jpg);
+}
+
+#ch5a22,
+#ch5a23 {
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  border: 3px solid #050505;
+}
+
+#ch5a22 {
+  background-image: url(../img/ch5a22.jpg);
+  position: relative;
+  left: 100vw;
+}
+
+#ch5a23 {
+  position: relative;
+  left: -100vw;
+  background-image: url(../img/ch5a23.jpg);
+}
+
+#ch5a24 {
+  height: 90vh;
+  width: 90vw;
+  margin: 0 5%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  border: 3px solid #050505;
+  background-image: url(../img/ch5a24.jpg);
+  transform: translateY(200%);
+}/*# sourceMappingURL=main.css.map */

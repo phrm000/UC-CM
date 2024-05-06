@@ -1,15 +1,15 @@
 @font-face {
   font-family: Bondrians;
-  src: url("fonts/Bondrians.woff2");
+  src: url("../fonts/Bondrians.woff2");
 }
 @font-face {
   font-family: AdamWarren;
-  src: url("fonts/AdamWarrenpro.woff2");
+  src: url("../fonts/AdamWarrenpro.woff2");
 }
 @font-face {
   font-family: AdamWarren;
   font-weight: bold;
-  src: url("fonts/AdamWarrenpro-Bold.woff2");
+  src: url("../fonts/AdamWarrenpro-Bold.woff2");
 }
 html, body, main {
   background-color: #fff;
@@ -40,8 +40,8 @@ h1 {
 
 h2 {
   font-family: "Bondrians";
-  font-size: 72px;
-  color: #7C8AA5;
+  font-size: 50vh;
+  color: #050505;
 }
 
 .text-balloon {
@@ -60,7 +60,7 @@ h2 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 5% 0;
+  margin: 0;
 }
 
 .container {
@@ -99,160 +99,15 @@ h2 {
   text-align: center;
 }
 
-body, html {
-  width: 100%;
+.margin-added {
+  margin: 15% 0;
 }
 
-html::-webkit-scrollbar {
-  width: 3px;
-  height: 0px;
-}
-
-html::-webkit-scrollbar-track {
-  background: #F8FBFF;
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-html::-webkit-scrollbar-thumb {
-  background: #050505;
-  border: 3px solid #050505;
-}
-
-#overlay-effect {
-  width: 100vw;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  z-index: 9999;
-  background-image: url(img/effect-overlay.png);
-  mix-blend-mode: multiply;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-#text-title {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-span {
-  font-family: "Bondrians";
-  font-size: 40px;
-  color: #DF8E43;
-}
-
-#object {
-  position: fixed;
-  left: 0;
-  bottom: 5%;
-  height: 30px;
-  width: 30px;
-  border-radius: 5px;
-  background: #d3d3d3;
-}
-
-@font-face {
-  font-family: Bondrians;
-  src: url("fonts/Bondrians.woff2");
-}
-@font-face {
-  font-family: AdamWarren;
-  src: url("fonts/AdamWarrenpro.woff2");
-}
-@font-face {
-  font-family: AdamWarren;
-  font-weight: bold;
-  src: url("fonts/AdamWarrenpro-Bold.woff2");
-}
-html, body, main {
-  background-color: #fff;
-}
-
-a, button {
-  cursor: pointer !important;
-}
-
-.chapter-mark {
-  height: 100vh;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  justify-content: center;
-}
-
-section {
-  padding-bottom: 10vh;
-}
-
-h1 {
-  font-family: "Bondrians";
-  font-size: 96px;
-  color: #A01E26;
-}
-
-h2 {
-  font-family: "Bondrians";
-  font-size: 72px;
-  color: #7C8AA5;
-}
-
-.text-balloon {
-  display: inline-flex;
-  padding: 32px;
-  justify-content: center;
-  align-items: center;
-  border: 3px solid #050505;
-  background: #fff;
-  font-family: "AdamWarren";
-  font-size: 24px;
-  text-align: center;
-}
-
-.centered-below {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: 5% 0;
-}
-
-.container {
-  width: 70%;
-  margin: 0 auto;
-}
-
-.section {
-  overflow: hidden;
-}
-
-.items {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  list-style: none;
-}
-
-.item {
-  min-width: 960px;
-  height: 450px;
-  margin-right: 90px;
-  text-align: center;
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  align-items: center;
-  border: 3px solid #050505;
-}
-.item .text-balloon {
-  width: 80%;
-  height: -moz-fit-content;
-  height: fit-content;
+.balloon-overlay {
   position: relative;
-  top: 10vh;
-  text-align: center;
+  top: -100vh;
+  width: 100%;
+  z-index: 999;
 }
 
 #chapter01 {
@@ -268,7 +123,7 @@ h2 {
   background-repeat: no-repeat;
   background-position: 50% 30%;
   background-size: 180%;
-  background-image: url(img/ch01-a01-warrenbg.png);
+  background-image: url(../img/ch01-a01-warrenbg.png);
   transition: 1s;
   border: 3px solid #050505;
 }
@@ -283,7 +138,7 @@ h2 {
 #a02-balloon01 {
   z-index: 1;
   position: relative;
-  left: -250px;
+  left: -550px;
   top: 450px;
   opacity: 0;
   transition: 1s;
@@ -301,7 +156,7 @@ h2 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(img/ch01-a03-Carrierbg.png);
+  background-image: url(../img/ch01-a03-Carrierbg.png);
   transition: 1s;
   border: 3px solid #050505;
 }
@@ -311,13 +166,27 @@ h2 {
   transition: 1s;
 }
 
-#a04-balloon02 {
+#a04-balloon02, #a10-balloon07, #a11-balloon08 {
   z-index: 1;
   position: relative;
   top: -150px;
   left: 95vw;
   opacity: 0;
   transition: 1s;
+}
+
+#a10-balloon07, #a11-balloon08 {
+  z-index: 1;
+  position: relative;
+  top: -550px;
+  left: 95vw;
+  opacity: 0;
+  transition: 1s;
+}
+
+#a11-balloon08 {
+  transform: translateX(-100px);
+  transform: translateY(120px);
 }
 
 #a05-balloon03 {
@@ -331,14 +200,14 @@ h2 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(img/a06-hangerman-bg1.png);
+  background-image: url(../img/a06-hangerman-bg1.png);
 }
 
 #slider01-bg2 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(img/a06-daisyD-bg2.png);
+  background-image: url(../img/a06-daisyD-bg2.png);
 }
 
 #a06-balloon04 {
@@ -351,15 +220,15 @@ h2 {
 
 #a06-fist {
   position: relative;
-  left: 100vw;
-  width: 80vw;
+  left: 120vw;
+  width: 75vw;
   margin: 0 10%;
   height: 65vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   z-index: 1;
-  background-image: url(img/ch01-a01-warrenbg.png);
+  background-image: url(../img/a07-fist.jpg);
   transition: 1s;
   border: 3px solid #050505;
   top: -120px;
@@ -384,6 +253,64 @@ h2 {
   background-position: center;
   background-size: cover;
   z-index: 1;
-  background-image: url(img/a10-reading-letter.png);
+  background-image: url(../img/a10-reading-letter.png);
   border: 3px solid #050505;
-}/*# sourceMappingURL=main.css.map */
+}
+
+#a12-trigger {
+  width: 80vw;
+  margin: 0 10%;
+  height: 65vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  background-image: url(../img/a11-spitting.png);
+  border: 3px solid #050505;
+  position: relative;
+  left: 120vw;
+}
+
+#a12-fist {
+  position: relative;
+  left: -120vw;
+  width: 75vw;
+  margin: 0 10%;
+  height: 65vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  background-image: url(../img/a12-fist.jpg);
+  transition: 1s;
+  border: 3px solid #050505;
+  top: -200px;
+}
+
+#a14-17-trigger {
+  width: 90vw;
+  margin: 0 5%;
+  height: 115vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  background-image: url(../img/a13-background.jpg);
+  border: 3px solid #050505;
+}
+
+.far-left {
+  width: 100%;
+  position: relative;
+  left: -100vw;
+}
+
+.far-right {
+  width: 100%;
+  position: relative;
+  left: 180vw;
+}
+
+.overlayed-section {
+  transform: translate(-50px, -200px);
+}/*# sourceMappingURL=chapter01.css.map */

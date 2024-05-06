@@ -1,15 +1,15 @@
 @font-face {
   font-family: Bondrians;
-  src: url("fonts/Bondrians.woff2");
+  src: url("../fonts/Bondrians.woff2");
 }
 @font-face {
   font-family: AdamWarren;
-  src: url("fonts/AdamWarrenpro.woff2");
+  src: url("../fonts/AdamWarrenpro.woff2");
 }
 @font-face {
   font-family: AdamWarren;
   font-weight: bold;
-  src: url("fonts/AdamWarrenpro-Bold.woff2");
+  src: url("../fonts/AdamWarrenpro-Bold.woff2");
 }
 html, body, main {
   background-color: #fff;
@@ -40,8 +40,8 @@ h1 {
 
 h2 {
   font-family: "Bondrians";
-  font-size: 72px;
-  color: #7C8AA5;
+  font-size: 50vh;
+  color: #050505;
 }
 
 .text-balloon {
@@ -60,7 +60,7 @@ h2 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 5% 0;
+  margin: 0;
 }
 
 .container {
@@ -72,14 +72,14 @@ h2 {
   overflow: hidden;
 }
 
-.items {
+.items, .items02, .items03, .items04 {
   display: flex;
   justify-content: flex-start;
   flex-wrap: nowrap;
   list-style: none;
 }
 
-.item {
+.item, .item02, .item03, .item04 {
   min-width: 960px;
   height: 450px;
   margin-right: 90px;
@@ -90,11 +90,30 @@ h2 {
   align-items: center;
   border: 3px solid #050505;
 }
-.item .text-balloon {
+.item .text-balloon, .item02 .text-balloon, .item03 .text-balloon, .item04 .text-balloon {
   width: 80%;
   height: -moz-fit-content;
   height: fit-content;
   position: relative;
   top: 10vh;
   text-align: center;
+}
+
+.margin-added {
+  margin: 15% 0;
+}
+
+.balloon-overlay {
+  position: relative;
+  top: -100vh;
+  width: 100%;
+  z-index: 999;
+}
+
+img {
+  outline: none;
+}
+
+.indoors {
+  background-color: #050505;
 }/*# sourceMappingURL=variables.css.map */

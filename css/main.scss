@@ -1,8 +1,10 @@
 @import "variables.scss";
+
 //https://gsap.com/community/forums/topic/35296-scrolltrigger-observe-slider-on-page-section/
 //https://gsap.com/docs/v3/Plugins/ScrollTrigger/
 body,html{
     width: 100%;    
+    max-width: 100%;
 }
 
 
@@ -29,12 +31,38 @@ html::-webkit-scrollbar {
     background-position: center;
     background-size: cover;
     z-index: 9999;
-    background-image: url(img/effect-overlay.png);
+    background-image: url(../img/effect-overlay.png);
     mix-blend-mode: multiply;
     position: fixed;
     top: 0;
     left: 0;
 }
 
+
+.grid-2{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  gap: 32px;
+  margin: 0 10%;
+}
+
+.grid-2-1{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  gap: 32px;
+  margin: 0 5%;
+}
+
+.column-grid{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 @import "intro.scss";
 @import "chapter01.scss";
+@import "chapter02.scss";
+@import "chapter05.scss"
