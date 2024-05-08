@@ -19,9 +19,7 @@ document.addEventListener("click", () => {
 
 gsap.registerPlugin(ScrollTrigger);
 
-ScrollTrigger.defaults({
-  markers: true,
-});
+
 
 gsap.to("#a02-balloon01", {
   scrollTrigger: {
