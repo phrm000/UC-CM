@@ -72,7 +72,7 @@ h2 {
   overflow: hidden;
 }
 
-.items, .items02, .items03, .item04 {
+.items, .items02, .items03, .items04 {
   display: flex;
   justify-content: flex-start;
   flex-wrap: nowrap;

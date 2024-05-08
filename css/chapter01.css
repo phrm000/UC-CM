@@ -72,14 +72,14 @@ h2 {
   overflow: hidden;
 }
 
-.items {
+.items, .items02, .items03, .items04 {
   display: flex;
   justify-content: flex-start;
   flex-wrap: nowrap;
   list-style: none;
 }
 
-.item {
+.item, .item02, .item03, .item04 {
   min-width: 960px;
   height: 450px;
   margin-right: 90px;
@@ -90,7 +90,7 @@ h2 {
   align-items: center;
   border: 3px solid #050505;
 }
-.item .text-balloon {
+.item .text-balloon, .item02 .text-balloon, .item03 .text-balloon, .item04 .text-balloon {
   width: 80%;
   height: -moz-fit-content;
   height: fit-content;
@@ -108,6 +108,14 @@ h2 {
   top: -100vh;
   width: 100%;
   z-index: 999;
+}
+
+img {
+  outline: none;
+}
+
+.indoors {
+  background-color: #050505;
 }
 
 #chapter01 {

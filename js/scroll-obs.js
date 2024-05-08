@@ -1,8 +1,20 @@
-var bgaudio = document.getElementById("bg-noise");
 
-document.addEventListener("DOMContentLoaded", () => {
-  bgaudio.volume = 0.2;
-  bgaudio.play();
+
+$(function () {
+  var $body = $(document);
+  $body.bind("scroll", function () {
+    // "Disable" the horizontal scroll.
+    if ($body.scrollLeft() !== 0) {
+      $body.scrollLeft(0);
+    }
+  });
+});
+
+var bgaudio = document.getElementById("bg-noise");
+bgaudio.volume = 0.2;
+
+document.addEventListener("click", () => {
+    bgaudio.play();
 });
 
 gsap.registerPlugin(ScrollTrigger);
@@ -408,6 +420,259 @@ gsap.to("#a24-bg", {
   ease: "none",
 });
 
+gsap.to("#ch3a02", {
+  scrollTrigger: {
+    trigger: "#ch3a01",
+    scrub: 1,
+    start: "=15% center",
+    end: "+=0",
+    snap: 1,
+  },
+  opacity: 1,
+  y: "-=100%",
+  ease: "none",
+});
+
+gsap.to("#ch3a03", {
+  scrollTrigger: {
+    trigger: "#ch3a01",
+    scrub: 1,
+    start: "=40% center",
+    end: "+=0",
+    snap: 1,
+  },
+  opacity: 1,
+  y: "-=200%",
+  ease: "none",
+});
+
+gsap.to("#ch3a04", {
+  scrollTrigger: {
+    trigger: "#ch3a01",
+    scrub: 1,
+    start: "=70% center",
+    end: "+=0",
+    snap: 1,
+  },
+  opacity: 1,
+  ease: "none",
+});
+
+gsap.to("#ch3a07", {
+  scrollTrigger: {
+    trigger: "#ch3a05",
+    scrub: 1,
+    start: "=30% center",
+    end: "+=0",
+    snap: 1,
+  },
+  opacity: 1,
+
+  x: "+=108vw",
+  ease: "none",
+});
+
+gsap.to("#ch3a08", {
+  scrollTrigger: {
+    trigger: "#ch3a05",
+    scrub: 1,
+    start: "=60% center",
+    end: "+=0",
+    snap: 1,
+  },
+  opacity: 1,
+
+  x: "-=90vw",
+  ease: "none",
+});
+
+ScrollTrigger.create({
+  trigger: "#ch3a05",
+  start: "+=65% center",
+  toggleAction: "play play play play",
+  toggleClass: {
+    targets: "#ch3a05",
+    className: "ch3a06",
+  },
+});
+
+gsap.to("#ch3a10", {
+  scrollTrigger: {
+    trigger: "#ch3a09",
+    scrub: 1,
+    start: "=30% center",
+    end: "+=0",
+    snap: 1,
+  },
+  opacity: 1,
+
+  y: "-=52vw",
+  ease: "none",
+});
+
+gsap.to("#ch3a14-slide", {
+  scrollTrigger: {
+    trigger: "#cha14-15-trigger",
+    scrub: 1,
+    start: "=00% center",
+    end: "+=0",
+    snap: 1,
+  },
+  opacity: 1,
+
+  x: "-=84vw",
+  ease: "none",
+});
+
+ScrollTrigger.create({
+  trigger: "#ch3a16",
+  start: "+=35% center",
+  toggleAction: "play play play play",
+  toggleClass: {
+    targets: "#ch3a16",
+    className: "ch3a17",
+  },
+});
+
+gsap.to("#ch3a15-slide", {
+  scrollTrigger: {
+    trigger: "#cha14-15-trigger",
+    scrub: 1,
+    start: "=25% center",
+    end: "+=0",
+    snap: 1,
+  },
+  opacity: 1,
+
+  x: "+=84vw",
+  ease: "none",
+});
+
+gsap.to("#ch3a19", {
+  scrollTrigger: {
+    trigger: "#ch3a18",
+    scrub: 1,
+    start: "=160% center",
+    end: "+=0",
+    snap: 1,
+  },
+  opacity: 1,
+  y: "-=100%",
+  ease: "none",
+});
+
+gsap.to("#ch3a22", {
+  scrollTrigger: {
+    trigger: "#ch3a21",
+    scrub: 1,
+    start: "=25% center",
+    end: "+=0",
+    snap: 1,
+  },
+  opacity: 1,
+  x: "=100%",
+  ease: "none",
+});
+
+gsap.to("#ch3a23", {
+  scrollTrigger: {
+    trigger: "#ch3a21",
+    scrub: 1,
+    start: "=40% center",
+    end: "+=0",
+    snap: 1,
+  },
+  opacity: 1,
+  x: "=-100%",
+  ease: "none",
+});
+
+gsap.to("#ch3a24", {
+  scrollTrigger: {
+    trigger: "#ch3a21",
+    scrub: 1,
+    start: "=60% center",
+    end: "+=0",
+    snap: 1,
+  },
+  opacity: 1,
+  y: "-=100%",
+  ease: "none",
+});
+
+gsap.to("#ch3a28-trigger .text-balloon", {
+  scrollTrigger: {
+    trigger: "#ch3a28-trigger",
+    scrub: 1,
+    start: "30% center",
+    end: "+=0",
+    snap: 1,
+  },
+  opacity: 1,
+  ease: "none",
+});
+
+ScrollTrigger.create({
+  trigger: "#ch3a28-trigger",
+  start: "+=30% center",
+  toggleAction: "play stop play play",
+  toggleClass: {
+    targets: "#ch3a28",
+    className: "ch3a29",
+  },
+});
+
+gsap.to("#ch3a30", {
+  scrollTrigger: {
+    trigger: "#ch3a28-trigger",
+    scrub: 1,
+    start: "130% center",
+    end: "+=0",
+    snap: 1,
+  },
+  opacity: 1,
+  ease: "none",
+});
+
+gsap.to("#ch3a31", {
+  scrollTrigger: {
+    trigger: "#ch3a31-a33",
+    scrub: 1,
+    start: "=0% center",
+    end: "+=0",
+    snap: 1,
+  },
+  opacity: 1,
+  x: "=-100%",
+  ease: "none",
+});
+
+gsap.to("#ch3a32", {
+  scrollTrigger: {
+    trigger: "#ch3a31-a33",
+    scrub: 1,
+    start: "=10% center",
+    end: "+=0",
+    snap: 1,
+  },
+  opacity: 1,
+  x: "=80%",
+  ease: "none",
+});
+
+gsap.to("#ch3a33", {
+  scrollTrigger: {
+    trigger: "#ch3a31-a33",
+    scrub: 1,
+    start: "=20% center",
+    end: "+=0",
+    snap: 1,
+  },
+  opacity: 1,
+  x: "=-100%",
+  ease: "none",
+});
+
 gsap.to("#ch5a02", {
   scrollTrigger: {
     trigger: "#ch5a01",
@@ -546,14 +811,6 @@ gsap.to("#ch5a13", {
   ease: "none",
 });
 
-
-
-
-
-
-
-
-
 gsap.to("#ch5a14", {
   scrollTrigger: {
     trigger: "#ch5a14-16-trigger",
@@ -582,7 +839,6 @@ gsap.to("#ch5a15", {
   ease: "none",
 });
 
-
 gsap.to("#ch5a16", {
   scrollTrigger: {
     trigger: "#ch5a14-16-trigger",
@@ -596,8 +852,6 @@ gsap.to("#ch5a16", {
   y: "0vh",
   ease: "none",
 });
-
-
 
 gsap.to("#ch5a16", {
   scrollTrigger: {
@@ -613,8 +867,6 @@ gsap.to("#ch5a16", {
   ease: "none",
 });
 
-
-
 gsap.to("#ch5a23", {
   scrollTrigger: {
     trigger: "#ch5a22-24-trigger",
@@ -628,7 +880,6 @@ gsap.to("#ch5a23", {
   y: "0vh",
   ease: "none",
 });
-
 
 gsap.to("#ch5a22", {
   scrollTrigger: {
@@ -644,10 +895,6 @@ gsap.to("#ch5a22", {
   ease: "none",
 });
 
-
-
-
-
 gsap.to("#ch5a24", {
   scrollTrigger: {
     trigger: "#ch5a22-24-trigger",
@@ -661,4 +908,3 @@ gsap.to("#ch5a24", {
   y: "-=300%",
   ease: "none",
 });
-
