@@ -1,14 +1,17 @@
 
+const lenis = new Lenis()
 
-$(function () {
-  var $body = $(document);
-  $body.bind("scroll", function () {
-    // "Disable" the horizontal scroll.
-    if ($body.scrollLeft() !== 0) {
-      $body.scrollLeft(0);
-    }
-  });
-});
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+
+lenis.on('scroll', ScrollTrigger.update)
+
+gsap.ticker.add((time)=>{
+  lenis.raf(time * 100)
+})
+
+gsap.ticker.lagSmoothing(0)
 
 var bgaudio = document.getElementById("bg-noise");
 bgaudio.volume = 0.2;
@@ -18,8 +21,6 @@ document.addEventListener("click", () => {
 });
 
 gsap.registerPlugin(ScrollTrigger);
-
-
 
 gsap.to("#a02-balloon01", {
   scrollTrigger: {

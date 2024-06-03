@@ -7,14 +7,16 @@
     <title>The Hateful Eight - CM</title>
 
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.1/dist/lenis.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+
 
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
-  <body id="smooth-wrapper">
+  <body>
     <audio controls autoplay loop id="bg-noise" style="display: none;">
       <source src="sounds/bg-noise.mp3" type="audio/mpeg" />
       Your browser does not support the audio element.
@@ -26,11 +28,11 @@
     </audio>
 
     <div id="overlay-effect"></div>
-    <main>
+    <main id="GScroll">
       <section id="title-section">
         <div class="chapter-mark">
           <h1>The Hateful Eight</h1>
-          <span>A film by <b>Quentin Tarantin</b></span>
+          <span>A film by <b>Quentin Tarantino</b></span>
         </div>
       </section>
 
