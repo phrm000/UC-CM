@@ -204,6 +204,56 @@ html.lenis, html.lenis body {
   pointer-events: none;
 }
 
+ol, ul {
+  list-style: none;
+}
+
+#chapter-jump {
+  font-family: "AdamWarren";
+  width: 100vw;
+  display: flex;
+  align-items: flex-end;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  background-color: transparent;
+  justify-content: space-around;
+}
+#chapter-jump ol {
+  display: flex;
+  margin: 0px;
+  justify-content: space-around;
+  padding: 4px 48px;
+  background-color: #3A3A3A;
+  height: 10vh;
+  align-items: center;
+  border-radius: 999px 999px 0 0px;
+  gap: 24px;
+}
+#chapter-jump ol li {
+  padding: 12px;
+}
+#chapter-jump ol li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #7C8AA5;
+  width: 24px;
+  height: 24px;
+  font-size: 16px;
+}
+#chapter-jump ol li:hover {
+  cursor: pointer;
+  border: #9b9b9b 1.5px solid;
+  border-radius: 99999px;
+}
+#chapter-jump ol li:hover a {
+  color: #F8FBFF;
+}
+
 #text-title {
   display: inline-flex;
   flex-direction: column;

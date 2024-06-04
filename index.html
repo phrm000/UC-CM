@@ -27,6 +27,10 @@
       Your browser does not support the audio element.
     </audio>
 
+    
+  
+
+    
     <div id="overlay-effect"></div>
     <main id="GScroll">
       <section id="title-section">
@@ -158,7 +162,7 @@
           <p class="text-balloon left">No fucking clue</p>
         </div>
 
-        <h2 class="chapter-mark">Chapter 02</h2>
+        <h2 class="chapter-mark" id="chapter02">Chapter 02</h2>
 
         <div class="grid-2" id="a18-21-trigger">
           <div class="column-grid">
@@ -233,7 +237,7 @@
           <div class="full-bg animation-element" id="a24-bg"></div>
         </div>
 
-        <h2 class="chapter-mark">Chapter 03</h2>
+        <h2 class="chapter-mark" id="chapter03">Chapter 03</h2>
 
         <div class="full-vh">
           <div class="full-bg animation-element" id="ch3a01"></div>
@@ -443,7 +447,7 @@
           </div>
         </div>
       </section>
-        <h2 class="chapter-mark">Chapter 04</h2>
+        <h2 class="chapter-mark" id="chapter04">Chapter 04</h2>
 
         <div class="centered-below margin-added">
           <p class="text-balloon left">Earlier that morning...</p>
@@ -590,6 +594,43 @@
       </section>
     </main>
 
+
+    <audio controls loop id="inside-sound" style="display: none;">
+      <source src="sounds/inside.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <audio controls loop id="daylight-sound" style="display: none;">
+      <source src="sounds/daylight.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+
+    <audio id="handcuff-sound" style="display: none;">
+      <source src="sounds/handcuff.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <audio id="doorpound-sound" style="display: none;">
+      <source src="sounds/doorpound.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    
+    <audio id="gunshot-sound" style="display: none;">
+      <source src="sounds/gunshot.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+
+    <div id="chapter-jump">
+      <ol>
+        <li><a href="#chapter01">1</a></li>
+        <li><a href="#chapter02">2</a></li>
+        <li><a href="#chapter03">3</a></li>
+        <li><a href="#chapter04">4</a></li>
+      </ol>
+    </div>
     <script src="js/scroll-obs.js"></script>
   </body>
 </html>

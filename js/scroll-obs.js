@@ -1,4 +1,19 @@
 
+
+
+document.querySelectorAll('#chapter-jump a').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+    window.scrollTo({
+      top: targetElement.offsetTop,
+      behavior: 'smooth'
+    });
+  });
+});
+
+
 const lenis = new Lenis()
 
 lenis.on('scroll', (e) => {
@@ -14,7 +29,7 @@ gsap.ticker.add((time)=>{
 gsap.ticker.lagSmoothing(0)
 
 var bgaudio = document.getElementById("bg-noise");
-bgaudio.volume = 0.2;
+bgaudio.volume = 0.05;
 
 document.addEventListener("click", () => {
     bgaudio.play();
@@ -392,6 +407,17 @@ gsap.to("#a22-balloon", {
   ease: "none",
 });
 
+
+let handcuffsound = document.querySelector("#handcuff-sound");
+
+ScrollTrigger.create({
+  trigger: "#a22-24-trigger",
+  start: "-=5% center",
+  onEnter: () => {
+    handcuffsound.play();
+  },
+});
+
 gsap.to("#a23-balloon", {
   scrollTrigger: {
     trigger: "#a22-24-trigger",
@@ -509,6 +535,32 @@ gsap.to("#ch3a10", {
   ease: "none",
 });
 
+let doorpound = document.querySelector("#doorpound-sound");
+
+ScrollTrigger.create({
+  trigger: "#ch3a11",
+  start: "-=5% center",
+  onEnter: () => {
+    doorpound.play();
+  },
+});
+
+
+let inside = document.querySelector("#inside-sound");
+inside.volume = 0.05;
+
+ScrollTrigger.create({
+  trigger: "#ch3a10",
+  start: "+=50% center",
+  onEnter: () => {
+    inside.play();
+    bgaudio.pause();
+    bgaudio.currentTime = 0;
+    daylight.pause();
+    daylight.currentTime = 0;
+  },
+});
+
 gsap.to("#ch3a14-slide", {
   scrollTrigger: {
     trigger: "#cha14-15-trigger",
@@ -532,6 +584,21 @@ ScrollTrigger.create({
     className: "ch3a17",
   },
 });
+
+
+ScrollTrigger.create({
+  trigger: "#ch3a16",
+  start: "+=50% center",
+  onEnter: () => {
+    bgaudio.play();
+    inside.pause();
+    inside.currentTime = 0;
+    daylight.pause();
+    daylight.currentTime = 0;
+  },
+});
+
+
 
 gsap.to("#ch3a15-slide", {
   scrollTrigger: {
@@ -584,6 +651,19 @@ gsap.to("#ch3a23", {
   opacity: 1,
   x: "=-100%",
   ease: "none",
+});
+
+
+ScrollTrigger.create({
+  trigger: "#ch3a10",
+  start: "-10% center",
+  onEnter: () => {
+    inside.play();
+    bgaudio.pause();
+    bgaudio.currentTime = 0;
+    daylight.pause();
+    daylight.currentTime = 0;
+  },
 });
 
 gsap.to("#ch3a24", {
@@ -671,6 +751,36 @@ gsap.to("#ch3a33", {
   x: "=-100%",
   ease: "none",
 });
+
+
+
+let shotsound = document.querySelector("#gunshot-sound");
+
+ScrollTrigger.create({
+  trigger: "#ch3a32",
+  start: "-=75% center",
+  onEnter: () => {
+    shotsound.play();
+  },
+});
+
+
+let daylight = document.querySelector("#daylight-sound");
+daylight.volume = 0.025;
+
+
+ScrollTrigger.create({
+  trigger: "#ch5a01",
+  start: "-10% center",
+  onEnter: () => {
+    daylight.play();
+    bgaudio.pause();
+    bgaudio.currentTime = 0;
+    inside.pause();
+    inside.currentTime = 0;
+  },
+});
+
 
 gsap.to("#ch5a02", {
   scrollTrigger: {
